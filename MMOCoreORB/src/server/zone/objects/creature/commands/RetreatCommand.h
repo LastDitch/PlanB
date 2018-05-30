@@ -93,15 +93,15 @@ public:
 			if (!checkDistance(leader, member, 120))
 				continue;
 			
-			if (!isValidGroupAbilityTarget(creature, member, false))
+			if (!isValidGroupAbilityTarget(leader, member, false))
 				continue;
 
-			Locker clocker(member, player);
+			Locker clocker(member, leader);
 
-			sendCombatSpam(member);
-			doRetreat(member);
+			sendCombatSpam(leader, member);
+			doRetreat(leader, member);
 
-			checkForTef(player, member);
+			checkForTef(leader, member);
 		}
 
 		if (!ghost->getCommandMessageString(STRING_HASHCODE("retreat")).isEmpty() && creature->checkCooldownRecovery("command_message")) {
