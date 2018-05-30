@@ -1,2 +1,2 @@
 # PlanB.
-This will be updated with all changes that make it to the live server..
+Master branch will forever remain an upto date version of pub 9 vanilla - basilisk/swgemu.
