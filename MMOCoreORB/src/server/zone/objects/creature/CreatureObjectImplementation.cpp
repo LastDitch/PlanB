@@ -2333,8 +2333,8 @@ void CreatureObjectImplementation::setStunnedState(int durationSeconds) {
 
 		state->setStartFlyText("combat_effects", "go_stunned", 0, 0xFF, 0);
 		state->setEndFlyText("combat_effects", "no_stunned", 0xFF, 0, 0);
-		state->setSkillModifier("private_melee_defense", -50);
-		state->setSkillModifier("private_ranged_defense", -50);
+		state->setSkillModifier("private_melee_defense", -30);
+		state->setSkillModifier("private_ranged_defense", -30);
 
 		addBuff(state);
 
